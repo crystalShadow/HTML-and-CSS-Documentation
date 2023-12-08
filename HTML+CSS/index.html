@@ -1,0 +1,142 @@
+<!DOCTYPE html><!--This is referred as DOTD(doctype declaration)-->
+<!--User agent stylesheet is the default CSS applied by the browsers when we don't override it with our own CSS-->
+<!--To change HTML in browser, press ctrl+shift+J and go to elements section and change whatever you want-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webDev-Documentation</title>
+    <style>
+        body {
+            /* background-image: url(https://images.pexels.com/photos/13427001/pexels-photo-13427001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%; */
+            background-color: aquamarine;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            color :#11623f;
+            
+        }
+        img {
+            filter: drop-shadow(5px 5px 5px #222); 
+            width:50%; 
+            height:40%;
+        }
+        video {
+            filter: drop-shadow(5px 5px 5px #222); 
+            width:50%; 
+            height:40%;
+        }
+        footer {
+            font-size: 50px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!--HTML Headings-->
+    <h1>HTML Headings</h1>
+    <hr>
+    <h1>heading one</h1>
+    <h2>heading two</h2>
+    <h3>heading three</h3>
+    <h4>heading four</h4>
+    <h5>heading five</h5>
+    <h6>heading six</h6>
+    <p>Headings has a default size. If we want to increase the size of the heading, We can use style attribute : style="font-size:60px;"</p>
+    <!--HTML Paragraphs-->
+    <h1>HTML Paragraphs</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aut aliquid esse nobis voluptate tempore nulla iure nisi amet vero asperiores, voluptas facere eveniet similique consectetur obcaecati labore ullam numquam enim ipsam iusto quod error? Inventore soluta, voluptate vel eveniet dolore deserunt tenetur obcaecati iure fuga, sint ab, tempora alias dolorem atque aliquid excepturi porro totam nobis quasi quod? Eius nulla maiores similique cupiditate perspiciatis natus saepe blanditiis consequatur aperiam officia voluptatem atque, velit, amet aliquam in, id quo dignissimos voluptate ducimus. Iure facilis beatae optio, ducimus expedita, tempora dolore totam doloremque alias quo itaque natus, culpa accusantium non quos.</p>
+    <!--use keyword lorem followed by number of words you need and then press tab. ex lorem10-->
+    <h1>Lists</h1>
+    <hr>
+    <!--HTML Lists-->
+    <h2>Ordered Lists</h2>
+    <!--Ordered Lists-->
+    <ol>
+        <li>HTML</li>
+        <li>Lorem</li>
+        <li>ipsum</li>
+    </ol>
+    <h2>Unorderd Lists</h2>
+    <!--Unorderd Lists-->
+    <ul>
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>dolor</li>
+        <li>sit</li>
+        <li>amet</li>
+    </ul>
+    <!--Nested Lists-->
+    <h2>Nested Lists</h2>
+    <ol>
+        <li>Lorem</li>
+        <ul>
+            <li>Lorem</li>
+            <li>Ipsum</li>
+            <li>Dolor</li>
+        </ul>
+    </ol>
+    <!--Images-->
+    <h1>Images</h1>
+    <hr>
+    <!--Local Images-->
+    <h2>Local Image - Herd of Sheep</h2>
+    <img src="/images/pexels-julia-volk-5201392.jpg" alt="Ladakh Natural" height="40%" width="50%">
+    <!--Remote Images-->
+    <h2>Remote Image - Pangong</h2>
+    <img src="https://images.pexels.com/photos/5201298/pexels-photo-5201298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Julia Volk" height="40%" width="50%">
+    <!--Links-->
+    <h1>Links</h1>
+    <!-- <h1>Links</h1>
+    <h1>Links</h1>
+    <h1>Links</h1>
+    <h1>Links</h1>
+    <h1>Links</h1> -->
+    <!-- press shift+alt+downArrow to duplicate lines -->
+    <hr>
+    <p>Click on this link for Google Search : <a href="https://www.google.com/">Google</a></p>
+    <!--Opening links in new tab-->
+    <p>Click this link to open Google Search in a new tab : <a href="https://www.google.com/" target="_blank">Google</a></p>
+    <!--target=_blank was exploited by hackers earlier but its auto-handled in modern-day browsers, but better to handle in your code also-->
+    <p>target=_blank attribute is used to open a link in a new web page when clicked on it and was exploited by hackers earlier but its auto-handled in modern-day browsers, but better to handle in your code also. Use rel = "noreferrer" in the anchor tag to handle it.</p>
+    <p>The above approach to open a link in a new tab can be exploited by hackers using a technique called <a href="https://owasp.org/www-community/attacks/Reverse_Tabnabbing" target="_blank" rel="noreferrer">Tabnabbing</a>.</p>
+    <p>Developer Note : Press shift+alt+downArrow to duplicate lines in VS Code</p>
+    <p>Developer Note : Right click on any element and click on inspect to view the code.</p>
+    <h1>Hyperlinks</h1>
+    <hr>
+    <p>Hyperlinks are internal links between different pages of our website.</p>
+    <a href="./hyperlinkExample.html" target="_blank" rel="noreferrer">Hyperlink-Example</a>
+    <h1>HTML Forms</h1>
+    <hr>
+    <form action="">
+       <table>
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td><label for="Gender">Gender</label></td>
+            <td><input type="radio">Male</td>
+            <td><input type="radio">Female</td>
+        </tr>
+       </table>
+    </form>
+    <h1>HTML Video</h1>
+    <hr>
+    <video src="./pexels-nitin-khajotia-17453763 (720p).mp4" controls autoplay></video>
+    <h1>HTML Audio</h1>
+    <hr>
+    <audio src="./sunflower-street-drumloop-85bpm-163900.mp3" controls></audio>
+    <h1>Semantic and Non-Semantic Elements</h1>
+    <hr>
+    <p>Semantic elements are the elements of which meaning is clear from the element's name. E.g. header footer form etc. Non-Semantic elements are the elements where meaning is not clear from its name. E.g. div, span etc.</p>
+    <footer>Thank You!</footer>
+</body>
+</html>
